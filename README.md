@@ -74,4 +74,4 @@ There are
 - 60s pinknoise input at maximum input level and 2 noise realisations, and
 - 5s sweep input at 6 input levels.
 
-All measurements are recorded with a sample rate of 8000 Hz.
+All measurements are recorded with a sample rate of 8000 Hz and with an input frequency range of 1/4th the driver's resonance frequency up to 1/2 the frequency of the first driver cone breakup mode.
