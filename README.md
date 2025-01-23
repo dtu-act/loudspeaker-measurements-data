@@ -40,7 +40,7 @@ The data is available for download under the release page. The `processed.asdf` 
   ...]
 ```
 
-The data consists of measurements of driving voltage, driving current, membrane displacement and membrane velocity. Each measurment is the mean over multiple repetitions ("num_reps") with a mean noise variance estimate `mean_var`.
+The data (`input_data`) consists of measurements of driving voltage, driving current, membrane displacement and membrane velocity. Each measurment is the mean over multiple repetitions ("num_reps") with a mean noise variance estimate `mean_var`.
 
 The measurement name gives an overview of the available data for each driver (except for `purify` which only contains a subset).
 
