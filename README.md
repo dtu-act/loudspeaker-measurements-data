@@ -40,4 +40,36 @@ The data is available for download under the release page. The `processed.asdf` 
   ...]
 ```
 
-The data is the mean over multiple repetitions with a mean noise variance estimate `mean_var`.
+The data consists of measurements of driving voltage, driving current, membrane displacement and membrane velocity. Each measurment is the mean over multiple repetitions ("num_reps") with a mean noise variance estimate `mean_var`.
+
+The measurement name gives an overview of the availble data for each driver
+
+```python
+>>> [a["measurement_name"] for a in af["measurements"]]
+['pinknoise_5s_seed_0_amp_1-16_fr.25-fb.5_253mV.asdf',
+ 'pinknoise_5s_seed_0_amp_1-1_fr.25-fb.5_4056mV.asdf',
+ 'pinknoise_5s_seed_0_amp_1-2_fr.25-fb.5_2028mV.asdf',
+ 'pinknoise_5s_seed_0_amp_1-32_fr.25-fb.5_126mV.asdf',
+ 'pinknoise_5s_seed_0_amp_1-4_fr.25-fb.5_1014mV.asdf',
+ 'pinknoise_5s_seed_0_amp_1-8_fr.25-fb.5_507mV.asdf',
+ 'pinknoise_5s_seed_1_amp_1-16_fr.25-fb.5_253mV.asdf',
+ 'pinknoise_5s_seed_1_amp_1-1_fr.25-fb.5_4061mV.asdf',
+ 'pinknoise_5s_seed_1_amp_1-2_fr.25-fb.5_2030mV.asdf',
+ 'pinknoise_5s_seed_1_amp_1-32_fr.25-fb.5_126mV.asdf',
+ 'pinknoise_5s_seed_1_amp_1-4_fr.25-fb.5_1015mV.asdf',
+ 'pinknoise_5s_seed_1_amp_1-8_fr.25-fb.5_507mV.asdf',
+ 'pinknoise_60s_seed_0_amp_1-1_fr.25-fb.5_4641mV.asdf',
+ 'pinknoise_60s_seed_1_amp_1-1_fr.25-fb.5_4642mV.asdf',
+ 'sweep_5s_amp_1-16_fr.25-fb.5_318mV.asdf',
+ 'sweep_5s_amp_1-1_fr.25-fb.5_5100mV.asdf',
+ 'sweep_5s_amp_1-2_fr.25-fb.5_2550mV.asdf',
+ 'sweep_5s_amp_1-32_fr.25-fb.5_159mV.asdf',
+ 'sweep_5s_amp_1-4_fr.25-fb.5_1275mV.asdf',
+ 'sweep_5s_amp_1-8_fr.25-fb.5_637mV.asdf']
+```
+
+There are 
+
+- 5s pinknoise input at 6 input levels and 2 noise realizations,
+- 60s pinknoise input at maximum input level and 2 noise realisations, and
+- 5s sweep input at 6 input levels.
