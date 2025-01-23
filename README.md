@@ -40,4 +40,4 @@ The data is available for download under the release page. The `processed.asdf` 
   ...]
 ```
 
-The data is the mean over multiple repetitionswith a mean noise variance estimate `mean_var`.
+The data is the mean over multiple repetitions with a mean noise variance estimate `mean_var`.
