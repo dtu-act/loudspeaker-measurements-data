@@ -73,3 +73,5 @@ There are
 - 5s pinknoise input at 6 input levels and 2 noise realizations,
 - 60s pinknoise input at maximum input level and 2 noise realisations, and
 - 5s sweep input at 6 input levels.
+
+All measurements are recorded with a sample rate of 8000 Hz.
